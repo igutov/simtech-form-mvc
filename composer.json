@@ -1,0 +1,21 @@
+{
+    "autoload": {
+        "psr-4": {
+            "controllers\\": "controllers/",
+            "models\\": "models/"
+        },
+        "files": [
+            "config.php",
+            "app.php"
+        ]
+    },
+    "require": {
+        "smarty/smarty": "^3.1",
+        "twbs/bootstrap": "4.0.0",
+        "mailgun/mailgun-php": "^3.1",
+        "kriswallsmith/buzz": "^1.1",
+        "nyholm/psr7": "^1.3",
+        "rakit/validation": "^1.4",
+        "gabordemooij/redbean": "dev-master"
+    }
+}
