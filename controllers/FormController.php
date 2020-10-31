@@ -11,6 +11,8 @@ class FormController
     public function action_index()
     {
         $smarty = new Smarty;
+        $requests = new Form;
+        $smarty->assign('requests', $requests->requestsAll());
         $smarty->display('views/request/list_request.tpl');
     }
 
@@ -51,6 +53,6 @@ class FormController
         $store = new Form;
         $store->store($data);
 
-        // header('Location: ?controller=form&action=index');
+        header('Location: ?controller=form&action=index');
     }
 }

@@ -11,6 +11,11 @@ class Form extends \RedBeanPHP\SimpleModel
         return R::findAll('durations');
     }
 
+    public function requestsAll()
+    {
+        return R::findAll('requests');
+    }
+
     public function store($data)
     {
         $path = __DIR__ . '/uploads/';
